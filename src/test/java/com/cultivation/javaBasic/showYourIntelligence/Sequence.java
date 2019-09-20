@@ -25,22 +25,15 @@ class SequenceIterator implements Iterator<Integer> {
     // TODO: You can add additional fields or methods if you want.
     // <--start
     Integer start, end;
-    ArrayList<Integer> collection = new ArrayList<>();
+//    ArrayList<Integer> collection = new ArrayList<>();
     // --end-->
 
     SequenceIterator(Integer start, Integer end) {
         // TODO: please implements the following code to pass the test
         // <--start
-        createSequence(this.start = start, this.end = end);
+        this.start = start;
+        this.end = end;
         // --end-->
-    }
-
-    private ArrayList<Integer> createSequence(Integer start, Integer end) {
-        while (hasNext()) {
-            collection.add(next());
-            this.start++;
-        }
-        return collection;
     }
 
     @Override
@@ -55,7 +48,8 @@ class SequenceIterator implements Iterator<Integer> {
     public Integer next() {
         // TODO: please implements the following code to pass the test
         // <--start
-        return this.hasNext() ? start : null;
+//        return this.hasNext() ? start : null;
+        return start++;
         // --end-->
     }
 }

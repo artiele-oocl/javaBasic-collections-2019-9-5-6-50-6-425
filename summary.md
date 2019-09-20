@@ -24,10 +24,12 @@ https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html
 4. None.
 
 #### should_create_a_sequence_without_putting_all_items_into_memory
-1. ?
-2. ?
-3. ?
-4. ?
+1. This task is about familiarity with manipulating simple array.
+https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html
+https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html
+2. Test failed because methods were not implemented correctly.
+3. Familiarity with Collection API.
+4. None.
 
 #### should_predict_linked_list_operation_result
 1. This task is about familiarity with manipulating simple array.
