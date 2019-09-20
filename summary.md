@@ -36,3 +36,16 @@ https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html
 2. It did not work because array is empty. 
 3. Familiarity with LinkedList Collection.
 4. None.
+
+#### should_generate_distinct_sequence_on_the_fly
+1. ?
+2. ?
+3. ?
+4. ?
+
+#### should_reflects_back_to_original_list_for_sub_range
+1. Familiarity with subList().
+https://docs.oracle.com/javase/7/docs/api/java/util/List.html
+2. Test failed because it is not the expected list.
+3. This simply extracted a sublist given specific indices; in our case fromIndex 3, inclusive, and toIndex 10, exclusive.
+4. None.
