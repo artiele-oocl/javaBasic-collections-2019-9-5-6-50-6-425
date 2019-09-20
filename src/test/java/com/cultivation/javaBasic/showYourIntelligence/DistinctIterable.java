@@ -1,7 +1,5 @@
 package com.cultivation.javaBasic.showYourIntelligence;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 import java.util.*;
 
 public class DistinctIterable<T> implements Iterable<T> {
@@ -28,19 +26,27 @@ class DistinctIterator<E> implements Iterator<E> {
     // <--start
     @SuppressWarnings({"FieldCanBeLocal", "unused"})
     private final Iterator<E> iterator;
+    private List<E> myList = new ArrayList<>();
 
     DistinctIterator(Iterator<E> iterator) {
-        this.iterator = iterator;
+        iterator.forEachRemaining(s->
+        {
+            if (!myList.contains(s)) {
+                myList.add(s);
+            }
+            });
+        this.iterator = myList.iterator();
     }
 
     @Override
     public boolean hasNext() {
-        throw new NotImplementedException();
+        return iterator.hasNext();
     }
 
     @Override
     public E next() {
-        throw new NotImplementedException();
+        return iterator.next();
+//        return position < Iterators.size(iterator) ? result.get(position) : null;
     }
     // --end->
 }
