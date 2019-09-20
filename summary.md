@@ -28,3 +28,11 @@ https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html
 2. ?
 3. ?
 4. ?
+
+#### should_predict_linked_list_operation_result
+1. This task is about familiarity with manipulating simple array.
+https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html
+https://docs.oracle.com/javase/8/docs/api/?java/util/Collections.html
+2. It did not work because array is empty. 
+3. Familiarity with LinkedList Collection.
+4. None.
